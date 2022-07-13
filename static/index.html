@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+
+<body>
+
+  <nav class="navbar bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./image/anime.png" alt="" width="70" height="55" class="d-inline-block align-text-top">
+        Mouse shop
+      </a>
+    </div>
+
+    <form class="d-flex">
+      <button class="btn btn-outline-dark korzina" type="submit">
+        <i class="bi-cart-fill me-1"></i>
+        Корзина
+        <span class="badge bg-dark text-white ms-1 rounded-pill count">0</span>
+      </button>
+    </form>
+  </nav>
+
+
+  <h1>Список товаров</h1>
+
+  <div class="container-fluid" style="margin-top: 37px;">
+    <div class="card-top d-flex justify-content-center mt-5"> >
+      <div class="card" style="width: 227px; margin: 15px;">
+        <img src="./image/Aerox3.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Aerox 3 Custom</h5>
+          <a id="Aerox_3_Custom" class="btn btn-primary buy-btns" style="margin-top: 121px;">В корзину</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 227px; margin: 15px;">
+        <img src="./image/4fc6959164d24b90a5ba63deb22bc5c3.png.350x280_q100_crop-fit_optimize.png" class="card-img-top"
+          alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Aerox 5</h5>
+          <a id="Aerox_5" class="btn btn-primary buy-btns" style="margin-top: 98px;">В корзину</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 200px; margin: 15px; ">
+        <img src="./image/d447dc561ffd4b45a8162f663464f34b.png.350x280_q100_crop-fit_optimize.png" class="card-img-top"
+          alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Aerox 5 Wireless</h5>
+          <a id="Aerox_5_Wireless" class="btn btn-primary buy-btns" style="margin-top: 123px;">В корзину</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 193px; margin: 15px;">
+        <img src="./image/Prime Neo Noir Edition.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Prime Neo Noir Edition</h5>
+          <a id="Prime_Neo_Noir_Edition" class="btn btn-primary buy-btns" style="margin-top: 123px;">В корзину</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-top d-flex justify-content-center mt-5"> >
+      <div class="card" style="width: 196px; margin: 15px;">
+        <img src="./image/Rival 3.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Rival 3</h5>
+          <a id="Rival_3" class="btn btn-primary buy-btns" style="margin-top: 121px;">В корзину</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 230px; margin: 15px;">
+        <img src="./image/Prime Wireless.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Prime Wireless</h5>
+          <a id="Prime_Wireless" class="btn btn-primary buy-btns" style="margin-top: 98px;">В корзину</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 200px; margin: 15px; ">
+        <img src="./image/Rival 600 Dota 2 Edition.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Rival 600 Dota 2 Edition</h5>
+          <a id="Rival_600_Dota_2_Edition" class="btn btn-primary buy-btns" style="margin-top: 123px;">В корзину</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 193px; margin: 15px;">
+        <img src="./image/SENSEI-NEON-RIDER.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">TEELSERIES SENSEI TEN NEON RIDER</h5>
+          <a id="TEELSERIES_SENSEI_TEN_NEON_RIDER" class="btn btn-primary buy-btns" style="margin-top: 123px;">В корзину</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="jokeModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title">Ваши покупки</h3>
+        </div>
+        <div class="modal-body">
+
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Ok</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <footer class=" fot bg-white mt-1">
+    <div class="col">
+      <div class="text-center">
+        <a href="#" class="btn btn-light text-light bg-dark text-uppercase">Facebook</a>
+        <a href="#" class="btn btn-light text-light bg-dark text-uppercase">Twitter</a>
+        <a href="#" class="btn btn-light text-light bg-dark text-uppercase">Instagram</a>
+      </div>
+    </div>
+
+    <div class="col text-center text-light mt-2 ">
+      <p>&copy; 2022 All rights reserved</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>
