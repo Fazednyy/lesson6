@@ -5,6 +5,7 @@ const korzina = document.querySelector('.korzina')
 const basketModal = new bootstrap.Modal(document.querySelector('#jokeModal'))
 const getMessange = document.querySelector('.modal-body')
 const schet = document.querySelector('.count')
+let count = 0
 
 
 const addKey = (data) => {
@@ -16,8 +17,8 @@ const addKey = (data) => {
 btnBuy.forEach(element => {
 
     element.addEventListener('click', () => {
-        let count = 0
-        count += 1,2,3,4
+    
+        count += 1
         schet.innerHTML = count
         const postObj = { userName: element.id }
         fetch('/cart', {
@@ -31,7 +32,8 @@ btnBuy.forEach(element => {
     
 })
 
-korzina.addEventListener('click', () => {
+korzina.addEventListener('click', (e) => {
+    e.preventDefault()
     fetch('/korzina').then(response => response.json()).then(data => addKey(data), basketModal.show())
 
 })

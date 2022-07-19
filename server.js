@@ -1,4 +1,5 @@
 const express = require('express')
+const fs = require('fs')
 const app = express()
 
 
@@ -14,7 +15,7 @@ app.post('/cart', (req, res) => {
     if(basket.hasOwnProperty(product)) {
         basket[product]++
     } else {
-        basket[product] = 1,2,3,4
+        basket[product] = 1
     }
 
     console.log(basket)
